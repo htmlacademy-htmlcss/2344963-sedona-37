@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Shouko Nishimiya](https://up.htmlacademy.ru/htmlcss/37/user/2344963).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Медведев`(https://htmlacademy.ru/profile/exteep).
 
 ---
 
