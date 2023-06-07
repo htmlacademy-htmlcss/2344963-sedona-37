@@ -45,7 +45,137 @@
       </nav>
     </header>
     <!-- Тело -->
-    <main class="main-catalog"></main>
+    <main class="main-catalog">
+      <div class="header-form-wrapper">
+        <header class="page-header">
+          <h1 class="main-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <!-- Фильтр -->
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <fieldset class="filter-group">
+            <legend class="filter-title">Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="control"
+                  ><input
+                    type="checkbox"
+                    class="control-input"
+                    name="pool"
+                    checked
+                  />
+                  Бассейн</label
+                >
+              </li>
+              <li class="filter-item">
+                <label class="control"
+                  ><input
+                    type="checkbox"
+                    class="control-input"
+                    name="parking"
+                    checked
+                  />
+                  Парковка</label
+                >
+              </li>
+              <li class="filter-item">
+                <label class="control"
+                  ><input type="checkbox" class="control-input" name="wi-fi" />
+                  Wi-Fi</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend class="filter-title">Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <label class="control"
+                  ><input
+                    type="radio"
+                    class="control-input"
+                    name="housing-type"
+                    checked
+                  />
+                  Гостиница</label
+                >
+              </li>
+              <li class="filter-item">
+                <label class="control"
+                  ><input
+                    type="radio"
+                    class="control-input"
+                    name="housing-type"
+                  />
+                  Мотель</label
+                >
+              </li>
+              <li class="filter-item">
+                <label class="control"
+                  ><input
+                    type="radio"
+                    class="control-input"
+                    name="housing-type"
+                  />
+                  Апартаменты</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-group">
+            <legend class="filter-title">Стоимость, ₽:</legend>
+            <input
+              class="price-from"
+              name="price-from"
+              type="number"
+              value="0"
+              min="0"
+              max="9999"
+              placeholder="от"
+            />
+            <input
+              class="price-to"
+              name="price-to"
+              type="number"
+              value="9000"
+              min="0"
+              max="9999"
+              placeholder="до"
+            />
+            <div class="slider"></div>
+          </fieldset>
+          <button class="submit-button" type="submit">Применить</button>
+          <button class="reset-button" type="reset">Сбросить</button>
+        </form>
+      </div>
+      <!-- Подписаться на рассылку -->
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p>
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+        <form
+          class="subscribe-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <input
+            class="subscribe-email"
+            type="email"
+            placeholder="Ваш e-mail"
+          />
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
     <!-- Футер -->
     <footer class="page-footer">
       <h2 class="visually-hidden">Контакты</h2>
