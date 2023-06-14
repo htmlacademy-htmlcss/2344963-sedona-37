@@ -8,11 +8,16 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <!-- Лого -->
-        <a href="index.html" class="navigation-logo"
-          ><img src="#" alt="Логотип Седоны" class="page-header-logo"
+        <a href="index.html" class="navigation-logo" aria-label="На главную"
+          ><img
+            src="images/logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип Седоны"
+            class="page-header-logo"
         /></a>
         <!-- Навигация -->
         <ul class="navigation-list">
@@ -29,13 +34,19 @@
         <!-- Пользовтельское меню -->
         <ul class="navigation-list navigation-list-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
+            <a class="navigation-link" href="#" aria-label="поиск">
+              <img src="images/search.svg" width="20" height="20" alt="поиск" />
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
+            <a class="navigation-link" href="#" aria-label="избранное">
+              <img
+                src="images/heart.svg"
+                width="20"
+                height="20"
+                alt="избранное"
+              />
+              <span class="favorites-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -45,14 +56,20 @@
       </nav>
     </header>
     <!-- Тело -->
-    <main class="main-index">
+    <main class="main-index" data-test="main">
       <!-- Герой -->
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-        <img src="#" alt="Приветсвенная надпись на фоне гор" class="hero-img" />
+        <img
+          src="images/index/welcome.svg"
+          width="458"
+          height="352"
+          alt="Приветсвенная надпись на фоне гор, WELCOME to the gorgeous SEDONA Because the Grand Canyon sucks!"
+          class="hero-img"
+        />
       </section>
       <!-- Преимущества -->
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <header class="advantages-header">
           <h2 class="advantages-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -66,7 +83,12 @@
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img src="#" alt="Фото города" />
+            <img
+              src="images/index/advantages-city.jpg"
+              width="800"
+              height="385"
+              alt="Фото города"
+            />
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -91,12 +113,17 @@
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img src="#" alt="Фото моста дьявола" />
+            <img
+              src="images/index/advantages-bridge.jpg"
+              width="800"
+              height="385"
+              alt="Фото моста дьявола"
+            />
           </li>
         </ul>
       </section>
       <!-- Travel -->
-      <section class="travel">
+      <section class="travel" data-test="search">
         <header class="travel-header">
           <h2 class="travel-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -133,7 +160,7 @@
         </div>
       </section>
       <!-- Подписаться на рассылку -->
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -153,7 +180,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts-list">
         <li class="contacts-list-item">
@@ -165,7 +192,12 @@
                 class="social-link"
                 aria-label="Vkontakte"
               >
-                <img src="#" alt="Vkontakte" />
+                <img
+                  src="images/social-vk.svg"
+                  width="47"
+                  height="40"
+                  alt="Vkontakte"
+                />
               </a>
             </li>
             <li class="social-list-item">
@@ -174,7 +206,12 @@
                 class="social-link"
                 aria-label="Telegram"
               >
-                <img src="#" alt="Telegram" />
+                <img
+                  src="images/social-telegram.svg"
+                  width="47"
+                  height="40"
+                  alt="Telegram"
+                />
               </a>
             </li>
             <li class="social-list-item">
@@ -183,7 +220,12 @@
                 class="social-link"
                 aria-label="Youtube"
               >
-                <img src="#" alt="Youtube" />
+                <img
+                  src="images/social-youtube.svg"
+                  width="47"
+                  height="40"
+                  alt="Youtube"
+                />
               </a>
             </li>
           </ul>
@@ -194,8 +236,12 @@
         </li>
         <li class="contacts-list-item">
           <h3 class="visually-hidden">Разработчик</h3>
-          <a class="developer" href="https://htmlacademy.ru/">
-            <img src="#" alt="htmlacademy" />
+          <a
+            class="developer"
+            href="https://htmlacademy.ru/"
+            aria-label="HTML Academy"
+          >
+            <img src="images/htmlacademy-logo.svg" alt="HTML Academy" />
           </a>
         </li>
       </ul>

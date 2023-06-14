@@ -8,34 +8,45 @@
   </head>
   <body>
     <!-- Хедер -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <!-- Лого -->
         <a href="index.html" class="navigation-logo"
-          ><img src="#" alt="Логотип Седоны" class="page-header-logo"
+          ><img
+            src="images/logo.svg"
+            width="140"
+            height="70"
+            alt="Логотип Седоны"
+            class="page-header-logo"
         /></a>
         <!-- Навигация -->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="index.html" class="navigation-link checked">Главная</a>
+            <a href="index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О седоне</a>
           </li>
           <li class="navigation-item">
-            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+            <a href="catalog.html" class="navigation-link checked">Гостиницы</a>
           </li>
         </ul>
         <!-- Пользовтельское меню -->
         <ul class="navigation-list navigation-list-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <img src="images/search.svg" width="20" height="20" alt="Поиск" />
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
+              <img
+                src="images/heart.svg"
+                width="20"
+                height="20"
+                alt="Избранное"
+              />
+              <span class="favorites-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -45,7 +56,7 @@
       </nav>
     </header>
     <!-- Тело -->
-    <main class="main-catalog">
+    <main class="main-catalog" data-test="main">
       <!-- контейнер для заднего фона -->
       <div class="catalog-bg-wrapper">
         <!-- Хедер -->
@@ -61,7 +72,12 @@
           </ul>
         </header>
         <!-- Фильтр -->
-        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form
+          class="filter"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+          data-test="filter"
+        >
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <fieldset class="filter-group">
             <legend class="filter-title">Инфраструктура:</legend>
@@ -159,7 +175,7 @@
         </form>
       </div>
       <!-- Список гостиниц -->
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <!-- настройки списка и мета -->
         <div class="catalog-meta">
@@ -192,7 +208,12 @@
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
             <h3>Amara Resort & Spa</h3>
-            <img src="#" alt="" />
+            <img
+              src="images/catalog/cards/hotel-1.jpg"
+              width="300"
+              height="212"
+              alt="Звездное небо сквозь скалы"
+            />
             <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 4000 ₽</span>
@@ -203,7 +224,12 @@
           </li>
           <li class="hotel-card-item">
             <h3>Villas at Poco Diablo</h3>
-            <img src="#" alt="" />
+            <img
+              src="images/catalog/cards/hotel-2.jpg"
+              width="300"
+              height="212"
+              alt="радуга на фоне скал"
+            />
             <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 5000 ₽</span>
@@ -214,7 +240,12 @@
           </li>
           <li class="hotel-card-item">
             <h3>Desert Quail Inn</h3>
-            <img src="#" alt="" />
+            <img
+              src="images/catalog/cards/hotel-3.jpg"
+              width="300"
+              height="212"
+              alt="скала окруженная зеленью на фоне голубого неба"
+            />
             <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 2500 ₽</span>
@@ -225,7 +256,12 @@
           </li>
           <li class="hotel-card-item">
             <h3>GreenTree Inn</h3>
-            <img src="#" alt="" />
+            <img
+              src="images/catalog/cards/hotel-4.jpg"
+              width="300"
+              height="212"
+              alt="скала на фоне звездного неба"
+            />
             <div class="hotel-info">
               <span>Гостиница</span>
               <span>От 1500 ₽</span>
@@ -246,7 +282,7 @@
         </ul>
       </section>
       <!-- Подписаться на рассылку -->
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -266,7 +302,7 @@
       </section>
     </main>
     <!-- Футер -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="contacts-list">
         <li class="contacts-list-item">
@@ -278,7 +314,12 @@
                 class="social-link"
                 aria-label="Vkontakte"
               >
-                <img src="#" alt="Vkontakte" />
+                <img
+                  src="images/social-vk.svg"
+                  width="47"
+                  height="40"
+                  alt="Vkontakte"
+                />
               </a>
             </li>
             <li class="social-list-item">
@@ -287,7 +328,12 @@
                 class="social-link"
                 aria-label="Telegram"
               >
-                <img src="#" alt="Telegram" />
+                <img
+                  src="images/social-telegram.svg"
+                  width="47"
+                  height="40"
+                  alt="Telegram"
+                />
               </a>
             </li>
             <li class="social-list-item">
@@ -296,7 +342,12 @@
                 class="social-link"
                 aria-label="Youtube"
               >
-                <img src="#" alt="Youtube" />
+                <img
+                  src="images/social-youtube.svg"
+                  width="47"
+                  height="40"
+                  alt="Youtube"
+                />
               </a>
             </li>
           </ul>
@@ -307,8 +358,12 @@
         </li>
         <li class="contacts-list-item">
           <h3 class="visually-hidden">Разработчик</h3>
-          <a class="developer" href="https://htmlacademy.ru/">
-            <img src="#" alt="htmlacademy" />
+          <a
+            class="developer"
+            href="https://htmlacademy.ru/"
+            aria-label="HTML Academy"
+          >
+            <img src="images/htmlacademy-logo.svg" alt="HTML Academy" />
           </a>
         </li>
       </ul>
