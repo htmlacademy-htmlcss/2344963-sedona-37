@@ -37,20 +37,28 @@ body {
   text-decoration: underline;
 }
 
+/* user-menu */
+.user-menu-button {
+  border: none;
+  background: none;
+}
+
 .favorites-counter {
-  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
   background: #7db54f;
 }
 
-.navigation-link.entry {
+.clickbait-link {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #756157;
+  text-decoration: none;
 }
 
 /* page-subscribe */
