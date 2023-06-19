@@ -14,6 +14,12 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -44,7 +50,7 @@ body {
 }
 
 .favorites-counter {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -228,6 +234,15 @@ body {
   color: #ffffff;
 }
 
+.breadcrumbs-link.home {
+  display: block;
+  width: 13px;
+  height: 15px;
+  background-image: url("../images/catalog/home-breadcrubs.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 15px;
+}
+
 /* filter */
 .filter-group {
   border: none;
@@ -291,7 +306,36 @@ body {
 }
 
 .card-view-button {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
   background: none;
+}
+
+.card-view-button.active {
+  border: 2px solid #000000;
+}
+
+.card-view-button.grid {
+  background-image: url("../images/catalog/button-grid.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
+}
+
+.card-view-button.slider {
+  background-image: url("../images/catalog/button-slider.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
+}
+
+.card-view-button.list {
+  background-image: url("../images/catalog/button-list.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  background-position: center;
 }
 
 /* catalog-cards */
