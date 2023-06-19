@@ -375,6 +375,20 @@ body {
   background-color: #7db54f;
 }
 
+.rate-stars {
+  width: 140px;
+  height: 37px;
+  display: flex;
+}
+
+.rate-star {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/catalog/star.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 17px;
+}
+
 .rate {
   font-size: 16px;
   line-height: 20px;
