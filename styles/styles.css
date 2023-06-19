@@ -153,12 +153,12 @@ body {
   color: #000000;
 }
 
-/* travel */
-.travel-header {
+/* features */
+.features-header {
   text-align: center;
 }
 
-.travel-title {
+.features-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -169,14 +169,14 @@ body {
   text-align: center;
 }
 
-.features-name {
+.feature-name {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.features-description {
+.feature-description {
   font-size: 18px;
   line-height: 21px;
 }
