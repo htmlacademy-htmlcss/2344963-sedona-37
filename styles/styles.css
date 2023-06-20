@@ -179,6 +179,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  padding: 96px 258px 104px 258px;
 }
 
 .subscribe.no-background {
@@ -233,6 +234,7 @@ body {
   background-image: url("../images/index/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 51px 371px 82px 371px
 }
 
 .hero-img {
