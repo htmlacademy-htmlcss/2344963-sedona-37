@@ -29,7 +29,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 
   margin: 0;
   display: flex;
@@ -38,6 +38,7 @@ body {
 }
 
 .main-container {
+  background-color: #ffffff;
   flex-grow: 1;
 }
 
@@ -71,6 +72,7 @@ body {
 /* Pages */
 /* page-header */
 .page-header {
+  background-color: #ffffff;
   display: flex;
   padding: 0 70px;
 }
@@ -200,6 +202,7 @@ body {
 
 /* page-footer */
 .page-footer {
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px 70px;
