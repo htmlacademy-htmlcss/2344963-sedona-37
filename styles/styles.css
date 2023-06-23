@@ -29,9 +29,15 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 
   margin: 0;
+  height: 100%;
+}
+
+.site-container {
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -42,13 +48,15 @@ body {
   flex-grow: 1;
 }
 
-.site-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
@@ -238,11 +246,11 @@ body {
   background-image: url("../images/index/hero-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 51px 371px 82px 371px
+  padding: 51px 371px 82px 371px;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1200px;
   height: 57px;
