@@ -70,8 +70,8 @@ body {
   background: #756157;
 
   display: inline-block;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  min-height: 36px;
   border: 0;
   border-radius: 4px;
   padding: 8px 0;
@@ -86,20 +86,26 @@ body {
 }
 
 .header-logo {
-  width: 140px;
+  height: 64px;
   margin-right: 28px;
+  z-index: 1;
 }
 
 .navigation {
   display: flex;
-  margin-left: auto;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 339px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .navigation-link {
@@ -109,6 +115,11 @@ body {
   color: #000000;
   text-transform: capitalize;
   text-decoration: none;
+
+  display: block;
+  padding: 20px 16px;
+  min-height: 64px;
+  min-width: 44px;
 }
 
 .navigation-link.checked {
@@ -120,28 +131,31 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 268px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .user-menu-button {
   border: none;
   background: none;
+  display: block;
+  padding: 22px 12px;
+  min-height: 64px;
+  min-width: 44px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
 }
 
 .user-menu-button.search {
-  width: 20px;
-  height: 20px;
   background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
 }
 
 .user-menu-button.heart {
-  width: 20px;
-  height: 20px;
   background-image: url("../images/heart.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
+  position: relative;
 }
 
 .favorites-counter {
@@ -150,11 +164,20 @@ body {
   line-height: 10px;
   color: #ffffff;
   background: #7db54f;
-  display: inline-block;
+
+  display: block;
   width: 20px;
   height: 20px;
   border-radius: 10px;
   padding: 5px 5px 5px 4px;
+
+  position: absolute;
+  top: 11px;
+  right: 4px;
+}
+
+.user-menu-item:nth-last-child(2) {
+  margin-right: 28px;
 }
 
 /* section-header */
