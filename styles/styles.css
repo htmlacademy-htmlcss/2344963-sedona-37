@@ -379,6 +379,10 @@ body {
 }
 
 /* features */
+.features .section-header {
+  padding: 64px 0;
+}
+
 .features-list {
   text-align: center;
   list-style: none;
@@ -389,6 +393,34 @@ body {
 
 .features-item {
   width: 400px;
+  min-height: 385px;
+  padding: 80px 85px;
+}
+
+.features-item::before {
+  display: block;
+  content:'';
+  width: 75px;
+  height: 72px;
+  background-size: 75px 72px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.features-item.housing::before {
+  background-image: url('../images/index/features-housing.svg')
+}
+
+.features-item.food::before {
+  background-image: url('../images/index/features-food.svg')
+}
+
+.features-item.souvenirs::before {
+  background-image: url('../images/index/features-souvenirs.svg')
+}
+
+.features-item:nth-child(2n-1) {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .feature-name {
@@ -396,10 +428,12 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.features-item:nth-child(2n-1) {
-  background: rgba(131, 179, 211, 0.12);
+.feature-description {
+  margin: 0;
 }
 
 /* find-hotel */
