@@ -236,8 +236,8 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   padding: 8px 0;
-  width: 232px;
-  height: 52px;
+  min-width: 232px;
+  min-height: 52px;
   background-color: #82b3d3;
 }
 
@@ -398,7 +398,7 @@ body {
 
 .features-item::before {
   display: block;
-  content:'';
+  content: "";
   width: 75px;
   height: 72px;
   background-size: 75px 72px;
@@ -407,15 +407,15 @@ body {
 }
 
 .features-item.housing::before {
-  background-image: url('../images/index/features-housing.svg')
+  background-image: url("../images/index/features-housing.svg");
 }
 
 .features-item.food::before {
-  background-image: url('../images/index/features-food.svg')
+  background-image: url("../images/index/features-food.svg");
 }
 
 .features-item.souvenirs::before {
-  background-image: url('../images/index/features-souvenirs.svg')
+  background-image: url("../images/index/features-souvenirs.svg");
 }
 
 .features-item:nth-child(2n-1) {
@@ -448,8 +448,8 @@ body {
 .button-find-hotel {
   font-size: 20px;
   line-height: 36px;
-  width: 376px;
-  height: 52px;
+  min-width: 376px;
+  min-height: 52px;
   padding: 8px 0;
 }
 
@@ -461,18 +461,45 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
+  min-height: 412px;
 }
 
 /* inner-header */
-.main-title {
+.inner-header {
+  margin-bottom: 40px;
+}
+
+.inner-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url("../images/catalog/breadcrumbs-vector.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 20px;
 }
 
 .breadcrumbs-link {
@@ -496,6 +523,20 @@ body {
 
 .filter-group {
   border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-group.infrastructure {
+  margin-right: 70px;
+}
+
+.filter-group.type {
+  margin-right: auto;
+}
+
+.filter-group {
+  margin-right: 70px;
 }
 
 .filter-title {
@@ -503,6 +544,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  padding: 0;
+  padding-bottom: 32px;
 }
 
 .filter-list {
@@ -510,6 +553,10 @@ body {
   padding: 0;
   margin: 0;
   line-height: 23px;
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .price {
@@ -523,18 +570,20 @@ body {
 .buttons-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .submit-button {
   font-family: "PT Sans", sans-serif;
   background: #82b3d3;
-  width: 191px;
+  min-width: 191px;
+  margin-bottom: 32px;
 }
 
 .reset-button {
   font-family: "PT Sans", sans-serif;
   background: none;
-  width: 191px;
+  min-width: 191px;
 }
 
 /* catalog */
