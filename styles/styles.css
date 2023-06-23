@@ -268,16 +268,19 @@ body {
   color: #ffffff;
   background-image: url("../images/index/hero-bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  padding: 51px 371px 82px 371px;
+  padding: 51px 0 82px;
 }
 
 .hero::before {
+  display: block;
   content: "";
   position: absolute;
-  width: 1200px;
-  height: 57px;
+  width: 100%;
+  min-height: 57px;
+  padding-top: 4.75%;
   background-image: url("../images/index/divider.svg");
+  background-size: cover;
+  background-position: top;
   bottom: 0;
   left: 0;
 }
