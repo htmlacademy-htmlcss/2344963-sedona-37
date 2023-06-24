@@ -60,12 +60,12 @@
         </nav>
       </header>
       <!-- Тело -->
-      <main class="main-catalog main-container" data-test="main">
+      <main class="main-container" data-test="main">
         <!-- контейнер для заднего фона -->
         <div class="catalog-bg-wrapper">
           <!-- Хедер -->
           <header class="inner-header">
-            <h1 class="main-title">Гостиницы Седоны</h1>
+            <h1 class="inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a
@@ -88,7 +88,7 @@
             data-test="filter"
           >
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group infrastructure">
               <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -125,7 +125,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group type">
               <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -161,7 +161,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group cost">
               <legend class="filter-title">Стоимость, ₽:</legend>
               <input
                 class="price price-from"
@@ -315,6 +315,7 @@
               <p class="button rate">Рейтинг: 5,0</p>
             </li>
           </ul>
+          <hr class="catalog-divider">
           <!-- Пагинация -->
           <ul class="pagination-list">
             <li
@@ -341,7 +342,7 @@
             >
               <a class="pagination-list-link" href="#">4</a>
             </li>
-            <li class="pagination-list-item" aria-label="разделитель">...</li>
+            <li class="pagination-list-item divider" aria-label="разделитель">...</li>
             <li
               class="pagination-list-item"
               aria-label="десятая страница с результатами поиска"
