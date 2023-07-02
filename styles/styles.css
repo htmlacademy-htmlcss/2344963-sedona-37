@@ -527,20 +527,21 @@ body {
 }
 
 .breadcrumbs {
-  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  align-items: center;
+  display: inline;
+  font-size: 16px;
 }
 
 .breadcrumbs-item {
-  display: flex;
-  align-items: center;
+  display: inline;
+  vertical-align: middle;
+  word-break: break-all;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-  display: block;
+  display: inline-block;
   content: "";
   width: 8px;
   height: 20px;
@@ -550,19 +551,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px 20px;
+  vertical-align: middle;
 }
 
 .breadcrumbs-link {
-  font-size: 16px;
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-link.home {
-  display: block;
+  vertical-align: middle;
+  display: inline-block;
   width: 13px;
   height: 15px;
   background-image: url("../images/catalog/home-breadcrubs.svg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 13px 15px;
 }
 
