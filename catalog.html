@@ -171,8 +171,7 @@
                 min="0"
                 max="9999"
                 placeholder="от"
-              />
-              <input
+              /><input
                 class="price price-to"
                 name="price-to"
                 type="number"
@@ -183,8 +182,10 @@
               />
               <div class="slider"></div>
             </fieldset>
-            <div class="buttons-wrap">
-              <button class="button submit-button" type="submit">Применить</button>
+            <div class="filter-buttons-wrap">
+              <button class="button submit-button" type="submit">
+                Применить
+              </button>
               <button class="button reset-button" type="reset">Сбросить</button>
             </div>
           </form>
@@ -228,94 +229,104 @@
           <!-- Карточки отелей -->
           <ul class="hotel-card-list">
             <li class="hotel-card-item">
-              <h3 class="hotel-card-caption">Amara Resort & Spa</h3>
-              <img
-                src="images/catalog/cards/hotel-1.jpg"
-                width="300"
-                height="212"
-                alt="Звездное небо сквозь скалы"
-              />
-              <div class="hotel-info">
-                <span>Гостиница</span>
-                <span>От 4000 ₽</span>
+              <div class="card-content-wrap">
+                <h3 class="hotel-card-caption">Amara Resort & Spa</h3>
+                <img
+                  src="images/catalog/cards/hotel-1.jpg"
+                  width="300"
+                  height="212"
+                  alt="Звездное небо сквозь скалы"
+                />
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 4000 ₽</span>
+                <a href="#" class="button hotel-more-link">Подробнее</a>
+                <button class="button favorite" type="button">
+                  в избранное
+                </button>
+                <div class="rate-stars four" aria-label="4 звезды">
+                  <div class="rate-star"></div>
+                  <div class="rate-star"></div>
+                  <div class="rate-star"></div>
+                  <span class="rate-star"></span>
+                </div>
+                <p class="button rate">Рейтинг: 8,5</p>
               </div>
-              <a href="#" class="button hotel-more-link">Подробнее</a>
-              <button class="button favorite" type="button">в избранное</button>
-              <div class="rate-stars four" aria-label="4 звезды">
-                <div class="rate-star"></div>
-                <div class="rate-star"></div>
-                <div class="rate-star"></div>
-                <span class="rate-star"></span>
-              </div>
-              <p class="button rate">Рейтинг: 8,5</p>
             </li>
             <li class="hotel-card-item">
-              <h3 class="hotel-card-caption">Villas at Poco Diablo</h3>
-              <img
-                src="images/catalog/cards/hotel-2.jpg"
-                width="300"
-                height="212"
-                alt="радуга на фоне скал"
-              />
-              <div class="hotel-info">
-                <span>Гостиница</span>
-                <span>От 5000 ₽</span>
+              <div class="card-content-wrap">
+                <h3 class="hotel-card-caption">Villas at Poco Diablo</h3>
+                <img
+                  src="images/catalog/cards/hotel-2.jpg"
+                  width="300"
+                  height="212"
+                  alt="радуга на фоне скал"
+                />
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 5000 ₽</span>
+                <a href="#" class="button hotel-more-link">Подробнее</a>
+                <button class="button favorite selected" type="button">
+                  в избранном
+                </button>
+                <div class="rate-stars four" aria-label="4 звезды">
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                </div>
+                <p class="button rate">Рейтинг: 9,2</p>
               </div>
-              <a href="#" class="button hotel-more-link">Подробнее</a>
-              <button class="button favorite selected" type="button">
-                в избранном
-              </button>
-              <div class="rate-stars four" aria-label="4 звезды">
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-              </div>
-              <p class="button rate">Рейтинг: 9,2</p>
             </li>
             <li class="hotel-card-item">
-              <h3 class="hotel-card-caption">Desert Quail Inn</h3>
-              <img
-                src="images/catalog/cards/hotel-3.jpg"
-                width="300"
-                height="212"
-                alt="скала окруженная зеленью на фоне голубого неба"
-              />
-              <div class="hotel-info">
-                <span>Гостиница</span>
-                <span>От 2500 ₽</span>
+              <div class="card-content-wrap">
+                <h3 class="hotel-card-caption">Desert Quail Inn</h3>
+                <img
+                  src="images/catalog/cards/hotel-3.jpg"
+                  width="300"
+                  height="212"
+                  alt="скала окруженная зеленью на фоне голубого неба"
+                />
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 2500 ₽</span>
+
+                <a href="#" class="button hotel-more-link">Подробнее</a>
+                <button class="button favorite" type="button">
+                  в избранное
+                </button>
+
+                <div class="rate-stars three" aria-label="3 звезды">
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                </div>
+                <p class="button rate">Рейтинг: 6,9</p>
               </div>
-              <a href="#" class="button hotel-more-link">Подробнее</a>
-              <button class="button favorite" type="button">в избранное</button>
-              <div class="rate-stars three" aria-label="3 звезды">
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-              </div>
-              <p class="button rate">Рейтинг: 6,9</p>
             </li>
             <li class="hotel-card-item">
-              <h3 class="hotel-card-caption">GreenTree Inn</h3>
-              <img
-                src="images/catalog/cards/hotel-4.jpg"
-                width="300"
-                height="212"
-                alt="скала на фоне звездного неба"
-              />
-              <div class="hotel-info">
-                <span>Гостиница</span>
-                <span>От 1500 ₽</span>
+              <div class="card-content-wrap">
+                <h3 class="hotel-card-caption">GreenTree Inn</h3>
+                <img
+                  src="images/catalog/cards/hotel-4.jpg"
+                  width="300"
+                  height="212"
+                  alt="скала на фоне звездного неба"
+                />
+
+                <span class="hotel-type">Гостиница</span>
+                <span class="hotel-price">От 1500 ₽</span>
+
+                <a href="#" class="button hotel-more-link">Подробнее</a>
+                <button class="button favorite" type="button">
+                  в избранное
+                </button>
+                <div class="rate-stars two" aria-label="2 звезды">
+                  <span class="rate-star"></span>
+                  <span class="rate-star"></span>
+                </div>
+                <p class="button rate">Рейтинг: 5,0</p>
               </div>
-              <a href="#" class="button hotel-more-link">Подробнее</a>
-              <button class="button favorite" type="button">в избранное</button>
-              <div class="rate-stars two" aria-label="2 звезды">
-                <span class="rate-star"></span>
-                <span class="rate-star"></span>
-              </div>
-              <p class="button rate">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <hr class="catalog-divider">
+          <hr class="catalog-divider" />
           <!-- Пагинация -->
           <ul class="pagination-list">
             <li
@@ -342,7 +353,9 @@
             >
               <a class="pagination-list-link" href="#">4</a>
             </li>
-            <li class="pagination-list-item divider" aria-label="разделитель">...</li>
+            <li class="pagination-list-item divider" aria-label="разделитель">
+              ...
+            </li>
             <li
               class="pagination-list-item"
               aria-label="десятая страница с результатами поиска"
@@ -356,7 +369,8 @@
           <header class="section-header">
             <h2 class="section-header-title">Подпишитесь на рассылку</h2>
             <p class="section-header-text">
-              Только полезная информация и никакого спама, честное бойскаутское!
+              Только полезная информация и никакого спама,<br />
+              честное бойскаутское!
             </p>
           </header>
           <form
@@ -424,10 +438,8 @@
             </a>
           </li>
         </ul>
-
         <h3 class="visually-hidden">Телефон</h3>
         <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-
         <h3 class="visually-hidden">Разработчик</h3>
         <a
           class="developer"
