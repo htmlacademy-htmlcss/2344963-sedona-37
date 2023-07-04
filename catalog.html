@@ -171,8 +171,7 @@
                 min="0"
                 max="9999"
                 placeholder="от"
-              />
-              <input
+              /><input
                 class="price price-to"
                 name="price-to"
                 type="number"
@@ -183,8 +182,10 @@
               />
               <div class="slider"></div>
             </fieldset>
-            <div class="buttons-wrap">
-              <button class="button submit-button" type="submit">Применить</button>
+            <div class="filter-buttons-wrap">
+              <button class="button submit-button" type="submit">
+                Применить
+              </button>
               <button class="button reset-button" type="reset">Сбросить</button>
             </div>
           </form>
@@ -285,8 +286,12 @@
                 <span>Гостиница</span>
                 <span>От 2500 ₽</span>
               </div>
-              <a href="#" class="button hotel-more-link">Подробнее</a>
-              <button class="button favorite" type="button">в избранное</button>
+              <div>
+                <a href="#" class="button hotel-more-link">Подробнее</a>
+                <button class="button favorite" type="button">
+                  в избранное
+                </button>
+              </div>
               <div class="rate-stars three" aria-label="3 звезды">
                 <span class="rate-star"></span>
                 <span class="rate-star"></span>
@@ -315,7 +320,7 @@
               <p class="button rate">Рейтинг: 5,0</p>
             </li>
           </ul>
-          <hr class="catalog-divider">
+          <hr class="catalog-divider" />
           <!-- Пагинация -->
           <ul class="pagination-list">
             <li
@@ -342,7 +347,9 @@
             >
               <a class="pagination-list-link" href="#">4</a>
             </li>
-            <li class="pagination-list-item divider" aria-label="разделитель">...</li>
+            <li class="pagination-list-item divider" aria-label="разделитель">
+              ...
+            </li>
             <li
               class="pagination-list-item"
               aria-label="десятая страница с результатами поиска"
