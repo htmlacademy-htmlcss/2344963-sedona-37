@@ -36,7 +36,7 @@ body {
 }
 
 .site-container {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -69,13 +69,16 @@ body {
   text-align: center;
   color: #ffffff;
   background: #756157;
+  word-break: break-all;
 
   display: inline-block;
-  width: 140px;
-  height: 36px;
   border: 0;
   border-radius: 4px;
-  padding: 8px 0;
+  padding: 8px 34px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 /* Pages */
@@ -149,7 +152,7 @@ body {
   width: 268px;
 }
 
-.user-menu-button {
+.user-menu-icon {
   border: none;
   background: none;
   padding: 22px 12px;
@@ -160,40 +163,38 @@ body {
   background-position: center;
 }
 
-.user-menu-button:hover {
-  cursor: pointer;
-}
-
-.button-search {
+.icon-search {
   background-image: url("../images/search.svg");
 }
 
-.button-heart {
+.icon-heart {
   background-image: url("../images/heart.svg");
   position: relative;
 }
 
-.favorites-counter {
-  font-family: "PT Sans", sans-serif;
-  font-size: 10px;
-  line-height: 10px;
-  color: #ffffff;
-  background: #7db54f;
-
-  display: block;
+.favorites-counter-wrap {
   width: 20px;
   height: 20px;
   border-radius: 10px;
   padding: 5px 5px 5px 4px;
-
+  background: #7db54f;
   position: absolute;
   top: 11px;
   right: 4px;
 }
 
+.favorites-counter {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
 .button.clickbait-link {
   margin: 14px 0 14px 20px;
-  width: 160px;
+  min-width: 160px;
 }
 
 /* section-header */
