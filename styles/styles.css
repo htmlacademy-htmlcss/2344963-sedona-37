@@ -92,16 +92,17 @@ body {
 
 .header-logo {
   height: 64px;
+  width: 140px;
   margin-right: 28px;
   z-index: 1;
 }
 
 .navigation {
   display: flex;
-  flex-grow: 1;
+  width: 100%;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 892px;
+  max-width: 892px;
 }
 
 .navigation-list {
@@ -111,7 +112,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 339px;
+  max-width: 596px;
+  width: 100%;
   flex-grow: 5;
   margin-right: 28px;
 }
@@ -128,7 +130,9 @@ body {
   padding: 20px 16px;
   min-height: 64px;
   min-width: 44px;
-  word-break: break-all;
+  max-width: 596px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .navigation-link.checked {
