@@ -206,7 +206,9 @@ body {
 .section-header {
   text-align: center;
   padding-left: 70px;
-  padding-right: 70px;;
+  padding-right: 70px;
+  word-break: break-all;
+
 }
 
 .section-header-title {
@@ -216,6 +218,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
+
 }
 
 .white {
@@ -236,9 +239,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 104px;
-  min-height: 415px;
+  padding: 97px 258px 104px;
+
 }
 
 .subscribe .section-header-text {
@@ -270,9 +272,9 @@ body {
   line-height: 36px;
   border: none;
   border-radius: 0 4px 4px 0;
-  padding: 8px 0;
-  width: 232px;
-  height: 52px;
+  padding-left: 50px;
+  padding-right: 50px;
+  min-width: 232px;
   background-color: #82b3d3;
 }
 
@@ -385,7 +387,7 @@ body {
   width: 1200px;
 }
 
-.advantages-item.img.reversed {
+.reversed {
   flex-direction: row-reverse;
 }
 
