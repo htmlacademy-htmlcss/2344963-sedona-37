@@ -128,6 +128,7 @@ body {
   padding: 20px 16px;
   min-height: 64px;
   min-width: 44px;
+  word-break: break-all;
 }
 
 .navigation-link.checked {
@@ -200,7 +201,8 @@ body {
 /* section-header */
 .section-header {
   text-align: center;
-  padding: 0 70px;
+  padding-left: 70px;
+  padding-right: 70px;;
 }
 
 .section-header-title {
@@ -212,7 +214,7 @@ body {
   margin-bottom: 20px;
 }
 
-.section-header-title.white {
+.white {
   color: #ffffff;
 }
 
@@ -222,9 +224,6 @@ body {
   line-height: 26px;
 }
 
-.section-header-text.white {
-  color: #ffffff;
-}
 
 /* page-subscribe */
 .subscribe {
@@ -492,8 +491,11 @@ body {
 /* find-hotel */
 .find-hotel {
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 304px;
+}
+
+.find-hotel .section-header {
+  padding: 0;
 }
 
 .find-hotel .section-header-text {
@@ -503,9 +505,8 @@ body {
 .button-find-hotel {
   font-size: 20px;
   line-height: 36px;
-  width: 376px;
-  height: 52px;
-  padding: 8px 0;
+  padding: 8px 50px;
+  min-width: 376px;
 }
 
 /* catalog.html inner */
