@@ -61,12 +61,14 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  align-self: center;
   color: #ffffff;
   background: #756157;
   word-break: break-all;
@@ -118,6 +120,10 @@ body {
   margin-right: 28px;
 }
 
+.navigation-item {
+  padding: 0 16px;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -127,22 +133,15 @@ body {
   text-decoration: none;
 
   display: block;
-  padding: 20px 16px;
+  padding: 20px 0;
   min-height: 64px;
   min-width: 44px;
-  max-width: 596px;
-  overflow: hidden;
-  white-space: nowrap;
+  word-break: break-all;
 }
 
 .navigation-link.checked {
-  position: relative;
-  text-decoration: underline;
-  text-decoration-color: #756257;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 19px;
-  text-underline-position: under;
-  z-index: 1;
+  border-bottom: solid 2px #756257;
+  padding-bottom: 18px;
 }
 
 /* user-menu */
@@ -208,7 +207,6 @@ body {
   padding-left: 70px;
   padding-right: 70px;
   word-break: break-all;
-
 }
 
 .section-header-title {
@@ -218,7 +216,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 20px;
-
 }
 
 .white {
@@ -231,7 +228,6 @@ body {
   line-height: 26px;
 }
 
-
 /* page-subscribe */
 .subscribe {
   background-color: #2c424a;
@@ -240,7 +236,6 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding: 97px 258px 104px;
-
 }
 
 .subscribe .section-header-text {
@@ -267,7 +262,6 @@ body {
 }
 
 .subscribe-button {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   border: none;
@@ -653,14 +647,12 @@ body {
 }
 
 .submit-button {
-  font-family: "PT Sans", sans-serif;
   background: #82b3d3;
   width: 191px;
   margin-bottom: 32px;
 }
 
 .reset-button {
-  font-family: "PT Sans", sans-serif;
   background: none;
   width: 191px;
 }
@@ -789,21 +781,29 @@ body {
   justify-self: end;
 }
 
-.favorite {
-  font-family: "PT Sans", sans-serif;
+.button-more {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.button-favorite {
   background-color: #82b3d3;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.favorite.selected {
+.button-favorite.selected {
   background-color: #7db54f;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-.rate-stars {
+.rating-stars {
   display: flex;
   flex-wrap: wrap;
 }
 
-.rate-star {
+.rating-star {
   width: 18px;
   height: 17px;
   background-image: url("../images/catalog/star.svg");
@@ -813,16 +813,24 @@ body {
   align-self: center;
 }
 
-.rate-star:not(:last-child) {
+.rating-star:not(:last-child) {
   margin-right: 6px;
 }
 
-.button.rate {
+.rating-score {
   margin: 0;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 8px 20px;
+  text-align: center;
+  align-self: center;
+  word-break: break-all;
   font-weight: 400;
   color: #333333;
   background-color: #f2f2f2;
-  height: 37px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .catalog-divider {
