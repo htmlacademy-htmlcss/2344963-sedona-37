@@ -279,7 +279,7 @@ body {
   display: grid;
   grid-template-columns: auto 720px auto;
   column-gap: 40px;
-  align-items: center;
+  text-align: center;
 }
 
 .social-list {
@@ -288,8 +288,6 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-self: start;
-  justify-content: flex-start;
 }
 
 .social-list-item img {
@@ -297,17 +295,15 @@ body {
 }
 
 .phone {
-  display: inline-block;
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  justify-self: center;
 }
 
 .developer img {
   display: block;
-  justify-self: end;
 }
 
 /* index.html inner */
@@ -424,7 +420,8 @@ body {
 
 .advantages-item img {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* features */
@@ -750,23 +747,22 @@ body {
 .hotel-card-item {
   border-radius: 4px;
   border: 1px solid #e6e6e6;
-  min-height: 438px;
-}
-
-.card-content-wrap {
-  margin: 0 auto;
-  width: 300px;
-  height: 100%;
-  align-content: center;
+  padding: 18px;
   display: grid;
+  align-content: center;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 16px;
+  min-height: 438px;
+  word-break: break-all;
 }
 
-.card-content-wrap img {
+.hotel-card-item img {
+  width: 100%;
   grid-column: 1 / -1;
   order: -1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .hotel-card-caption {
