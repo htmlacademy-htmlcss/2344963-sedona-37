@@ -79,7 +79,7 @@ body {
   padding: 8px 34px;
 }
 
-.button:hover {
+button:hover {
   cursor: pointer;
 }
 
@@ -359,7 +359,6 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 385px;
-  flex-grow: 1;
 }
 
 .advantages-item.not-img:nth-child(2n) {
@@ -576,6 +575,8 @@ body {
 /* filter */
 .filter {
   display: flex;
+  flex-wrap: nowrap;
+  word-break: break-all;
 }
 
 .filter-group {
@@ -585,14 +586,20 @@ body {
 }
 
 .filter-group.infrastructure {
+  max-width: 150px;
+  width: 100%;
   margin-right: 70px;
 }
 
 .filter-group.type {
+  max-width: 150px;
+  width: 100%;
   margin-right: auto;
 }
 
 .filter-group.cost {
+  max-width: 288px;
+  width: 100%;
   margin-right: 70px;
 }
 
@@ -638,20 +645,20 @@ body {
 }
 
 .filter-buttons-wrap {
-  display: flex;
-  flex-direction: column;
   padding-top: 56px;
+  max-width: 191px;
+  width: 100%;
 }
 
 .submit-button {
   background: #82b3d3;
-  width: 191px;
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .reset-button {
   background: none;
-  width: 191px;
+  width: 100%;
 }
 
 /* catalog */
@@ -677,16 +684,17 @@ body {
 }
 
 .select-control {
+  appearance: none;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   width: 292px;
-  height: 49px;
-  padding: 14px 15px;
+  padding: 12px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin-right: 70px;
+  background-color: transparent;
 }
 
 .card-view-buttons {
