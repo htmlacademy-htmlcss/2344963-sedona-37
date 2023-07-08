@@ -204,6 +204,8 @@ button:hover {
 
   border-radius: 10px;
   background: #7db54f;
+  
+  pointer-events: none;
 }
 
 .favorites-counter {
