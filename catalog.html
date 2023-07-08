@@ -12,25 +12,25 @@
       <!-- Хедер -->
       <header class="page-header" data-test="header">
         <!-- Лого -->
-        <a href="index.html" class="header-logo" aria-label="На главную"
+        <a class="header-logo" href="index.html" aria-label="На главную"
           ><img
+            class="page-header-logo"
             src="images/logo.svg"
             width="140"
             height="70"
             alt="Логотип Седоны"
-            class="page-header-logo"
         /></a>
         <!-- Навигация -->
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="index.html" class="navigation-link">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">О седоне</a>
+              <a class="navigation-link" href="#">О седоне</a>
             </li>
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link checked"
+              <a class="navigation-link checked" href="catalog.html"
                 >Гостиницы</a
               >
             </li>
@@ -39,15 +39,15 @@
           <ul class="user-menu">
             <li class="user-menu-item">
               <button
-                type="button"
                 class="user-menu-icon icon-search"
+                type="button"
                 aria-label="поиск"
               ></button>
             </li>
             <li class="user-menu-item">
               <button
-                type="button"
                 class="user-menu-icon icon-heart"
+                type="button"
                 aria-label="избранное"
               >
                 <div class="favorites-counter-wrap">
@@ -98,6 +98,7 @@
                     ><input
                       type="checkbox"
                       class="control-input"
+                      type="checkbox"
                       name="pool"
                       checked
                     />
@@ -107,8 +108,8 @@
                 <li class="filter-item">
                   <label class="control"
                     ><input
-                      type="checkbox"
                       class="control-input"
+                      type="checkbox"
                       name="parking"
                       checked
                     />
@@ -118,8 +119,8 @@
                 <li class="filter-item">
                   <label class="control"
                     ><input
-                      type="checkbox"
                       class="control-input"
+                      type="checkbox"
                       name="wi-fi"
                     />
                     Wi-Fi</label
@@ -133,8 +134,8 @@
                 <li class="filter-item">
                   <label class="control"
                     ><input
-                      type="radio"
                       class="control-input"
+                      type="radio"
                       name="housing-type"
                       checked
                     />
@@ -144,8 +145,8 @@
                 <li class="filter-item">
                   <label class="control"
                     ><input
-                      type="radio"
                       class="control-input"
+                      type="radio"
                       name="housing-type"
                     />
                     Мотель</label
@@ -154,8 +155,8 @@
                 <li class="filter-item">
                   <label class="control"
                     ><input
-                      type="radio"
                       class="control-input"
+                      type="radio"
                       name="housing-type"
                     />
                     Апартаменты</label
@@ -167,16 +168,16 @@
               <legend class="filter-title">Стоимость, ₽:</legend>
               <input
                 class="price price-from"
-                name="price-from"
                 type="number"
+                name="price-from"
                 value="0"
                 min="0"
                 max="9999"
                 placeholder="от"
               /><input
                 class="price price-to"
-                name="price-to"
                 type="number"
+                name="price-to"
                 value="9000"
                 min="0"
                 max="9999"
@@ -240,7 +241,7 @@
               />
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 4000 ₽</span>
-              <a href="#" class="button button-more">Подробнее</a>
+              <a class="button button-more" href="#">Подробнее</a>
               <button class="button button-favorite" type="button">
                 в избранное
               </button>
@@ -262,7 +263,7 @@
               />
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 5000 ₽</span>
-              <a href="#" class="button button-more">Подробнее</a>
+              <a class="button button-more" href="#">Подробнее</a>
               <button class="button button-favorite selected" type="button">
                 в избранном
               </button>
@@ -285,7 +286,7 @@
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 2500 ₽</span>
 
-              <a href="#" class="button button-more">Подробнее</a>
+              <a class="button button-more" href="#">Подробнее</a>
               <button class="button button-favorite" type="button">
                 в избранное
               </button>
@@ -309,7 +310,7 @@
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 1500 ₽</span>
 
-              <a href="#" class="button button-more">Подробнее</a>
+              <a class="button button-more" href="#">Подробнее</a>
               <button class="button button-favorite" type="button">
                 в избранное
               </button>
@@ -391,8 +392,8 @@
           <ul class="social-list">
             <li class="social-list-item">
               <a
-                href="https://vk.com/htmlacademy"
                 class="social-link"
+                href="https://vk.com/htmlacademy"
                 aria-label="Vkontakte"
               >
                 <img
@@ -405,8 +406,8 @@
             </li>
             <li class="social-list-item">
               <a
-                href="https://t.me/htmlacademy"
                 class="social-link"
+                href="https://t.me/htmlacademy"
                 aria-label="Telegram"
               >
                 <img
@@ -419,8 +420,8 @@
             </li>
             <li class="social-list-item">
               <a
-                href="https://www.youtube.com/user/htmlacademyru"
                 class="social-link"
+                href="https://www.youtube.com/user/htmlacademyru"
                 aria-label="Youtube"
               >
                 <img
