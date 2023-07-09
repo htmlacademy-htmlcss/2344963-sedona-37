@@ -278,7 +278,6 @@ button:hover {
 
 .subscribe-form {
   display: flex;
-  justify-content: center;
 }
 
 .subscribe-email {
@@ -294,7 +293,7 @@ button:hover {
 }
 
 .subscribe-button {
-  min-width: 232px;
+  width: 232px;
   padding-left: 50px;
   padding-right: 50px;
 
@@ -487,12 +486,12 @@ button:hover {
   padding: 0;
 
   text-align: center;
+  word-break: break-all;
 
   list-style: none;
 }
 
 .features-item {
-  flex-grow: 1;
   min-height: 385px;
   width: 400px;
   padding: 80px 85px;
@@ -556,6 +555,7 @@ button:hover {
 }
 
 .button-find-hotel {
+  min-height: 52px;
   min-width: 376px;
   padding: 8px 50px;
 
@@ -753,7 +753,7 @@ input[type="number"] {
 
 /* catalog */
 .catalog-hotels {
-  padding: 50px 70px 60px;
+  padding: 50px 70px 52px;
 }
 
 /* catalog-meta */
@@ -761,9 +761,12 @@ input[type="number"] {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
+
+  word-break: break-all;
 }
 
 .search-result {
+  max-width: 468px;
   margin: 0;
   margin-right: auto;
 
@@ -790,11 +793,11 @@ input[type="number"] {
   border-radius: 4px;
 }
 
-.card-view-buttons {
+.view-buttons-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  height: 48px;
+  min-height: 49px;
   width: 160px;
   margin: 0;
   padding: 0;
@@ -802,34 +805,39 @@ input[type="number"] {
   list-style: none;
 }
 
-.card-view-button {
+.view-buttons-item {
   height: 48px;
   width: 48px;
+}
+
+.view-button {
+  height: 100%;
+  width: 100%;
 
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background: none;
 }
 
-.card-view-button.active {
+.view-button.active {
   border: 2px solid #000000;
 }
 
-.card-view-button.grid {
+.view-button.grid {
   background-image: url("../images/catalog/button-grid.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
-.card-view-button.slider {
+.view-button.slider {
   background-image: url("../images/catalog/button-slider.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
   background-position: center;
 }
 
-.card-view-button.list {
+.view-button.list {
   background-image: url("../images/catalog/button-list.svg");
   background-repeat: no-repeat;
   background-size: 16px 14px;
@@ -850,7 +858,7 @@ input[type="number"] {
 
 .hotel-card-item {
   display: grid;
-  align-content: center;
+  align-content: top;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   row-gap: 16px;
@@ -954,11 +962,16 @@ input[type="number"] {
 /* pagination */
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
 
   list-style: none;
+}
+
+.pagination-list-item {
+  margin-bottom: 8px;
 }
 
 .pagination-list-item:not(:last-child) {
@@ -967,15 +980,16 @@ input[type="number"] {
 
 .pagination-list-link {
   display: block;
-  height: 60px;
+  min-height: 60px;
   width: 60px;
-  padding: 12px 0;
+  padding: 12px;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
   text-align: center;
+  word-break: break-all;
   color: #ffffff;
 
   background: #82b3d3;
