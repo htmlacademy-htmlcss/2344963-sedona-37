@@ -287,9 +287,27 @@ button:hover {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
+  color: #000000;
 
   border: none;
+  border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
+}
+
+.subscribe-email::placeholder {
+  font-weight: 400;
+
+  opacity: 0.6;
+}
+
+.subscribe-email:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-email:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .subscribe-button {
@@ -738,9 +756,19 @@ button:hover {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.price:hover {
+  background-color: #e6e6e6;
+}
+
+.price:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 /* Chrome, Safari, Edge, Opera */
