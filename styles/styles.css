@@ -326,8 +326,21 @@ button:hover {
   list-style: none;
 }
 
-.social-list-item img {
+.social-link {
+  position: relative;
+
   display: block;
+  width: 47px;
+  height: 40px;
+}
+
+.social-link-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .phone {
@@ -339,8 +352,18 @@ button:hover {
   color: #000000;
 }
 
-.developer img {
+.developer {
+  position: relative;
+
   display: block;
+  height: 50px;
+  width: 115px;
+}
+
+.developer-icon {
+  position: absolute;
+  top: 4px;
+  left: 2px;
 }
 
 /* index.html inner */
@@ -388,6 +411,8 @@ button:hover {
 
 .advantages .section-header-title {
   margin-bottom: 25px;
+
+  word-spacing: -1px;
 }
 
 .advantages-list {
@@ -433,7 +458,7 @@ button:hover {
   justify-content: center;
   width: 400px;
   height: 100%;
-  padding: 85px;
+  padding: 83px;
 }
 
 .advantages-title {
@@ -655,19 +680,19 @@ button:hover {
   border: none;
 }
 
-.filter-group.infrastructure {
+.filter-group-infrastructure {
   max-width: 150px;
   width: 100%;
   margin-right: 70px;
 }
 
-.filter-group.type {
+.filter-group-type {
   max-width: 150px;
   width: 100%;
   margin-right: auto;
 }
 
-.filter-group.cost {
+.filter-group-cost {
   max-width: 288px;
   width: 100%;
   margin-right: 70px;
@@ -696,10 +721,18 @@ button:hover {
   margin-bottom: 16px;
 }
 
+.price-wrap {
+  position: relative;
+
+  display: flex;
+  height: 48px;
+  width: 288px;
+}
+
 .price {
   height: 48px;
   width: 143px;
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
 
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -711,14 +744,14 @@ button:hover {
 }
 
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.filter-group-cost input::-webkit-outer-spin-button,
+.filter-group-cost input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-input[type="number"] {
+.filter-group-cost input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -730,6 +763,31 @@ input[type="number"] {
 
 .price-to {
   border-radius: 0 4px 4px 0;
+}
+
+.price-text {
+  position: absolute;
+  top: 12px;
+  z-index: 1;
+
+  display: block;
+  height: 24px;
+  width: 20px;
+
+  font-family: "PT Sans", sans-serif;
+  line-height: 24px;
+  color: #000000;
+
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+.price-text-from {
+  left: 106px;
+}
+
+.price-text-to {
+  right: 20px;
 }
 
 .filter-buttons-wrap {
@@ -780,15 +838,21 @@ input[type="number"] {
 .select-control {
   width: 292px;
   padding: 12px 20px;
+  padding-right: 52px;
   margin-right: 70px;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  text-overflow: ellipsis;
   color: #333333;
 
   appearance: none;
   background-color: transparent;
+  background-image: url("../images/catalog/select-vector.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  background-position: right 18px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
