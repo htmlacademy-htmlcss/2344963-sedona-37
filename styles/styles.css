@@ -310,6 +310,10 @@ body {
   list-style: none;
 }
 
+.user-menu-item {
+  position: relative;
+}
+
 .user-menu-icon {
   height: 64px;
   width: 44px;
@@ -450,6 +454,7 @@ body {
 .subscribe-email:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+  border-radius: 4px 0 0 4px;
   outline-offset: -3px;
 }
 
@@ -466,6 +471,7 @@ body {
 
 .subscribe-button:focus {
   outline-offset: -3px;
+  border-radius: 0 4px 4px 0;
 }
 
 /* page-footer */
@@ -473,15 +479,27 @@ body {
   display: grid;
   grid-template-columns: auto 720px auto;
   column-gap: 40px;
-  padding: 45px 70px 35px;
+  padding: 40px 70px 30px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.footer-social-list-wrap {
+  justify-self: start;
+}
+
+.footer-phone-wrap {
+  justify-self: center;
+}
+
+.footer-developer-wrap {
+  justify-self: end;
 }
 
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   list-style: none;
 }
@@ -500,6 +518,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  fill: #83b3d3;
 }
 
 .social-link:hover .social-link-icon,
@@ -527,24 +546,70 @@ body {
 }
 
 .phone {
-  display: block;
+  display: inline-block;
+  padding: 5px 10px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.developer {
-  position: relative;
-  display: block;
-  height: 50px;
-  width: 115px;
+.phone:hover {
+  color: #756157;
 }
 
-.developer-icon {
-  position: absolute;
-  top: 4px;
-  left: 2px;
+.phone:focus-visible {
+  color: #756157;
+  border-radius: 4px;
+  outline: 3px solid #83b3d3;
+}
+
+@supports not selector(:focus-visible) {
+  .phone:focus {
+    color: #756157;
+    border-radius: 4px;
+    outline: 3px solid #35aeff;
+  }
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.developer {
+  display: block;
+  height: 34px;
+  width: 115px;
+  margin: 8px 0;
+}
+
+.developer-link-icon {
+  fill: #000000;
+}
+
+.developer:hover .developer-link-icon,
+.developer:focus-visible .developer-link-icon {
+  fill: #756157;
+}
+
+.developer:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #83b3d3;
+}
+
+@supports not selector(:focus-visible) {
+  .developer:focus developer-link-icon {
+    fill: #756157;
+  }
+  .developer:focus {
+    border-radius: 4px;
+    outline: 3px solid #83b3d3;
+  }
+}
+
+.developer:active .developer-link-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* index.html inner */
