@@ -412,6 +412,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.subscribe .section-header {
+  padding: 0;
+}
+
 .subscribe .section-header-title {
   color: #ffffff;
 }
