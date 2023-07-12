@@ -250,7 +250,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+
   max-width: 596px;
   width: 100%;
   margin: 0;
@@ -804,10 +804,8 @@ body {
 /* catalog.html inner */
 .catalog-bg-wrapper {
   min-height: 412px;
-  padding: 35px 70px 70px 70px;
-
+  padding: 35px 70px 70px;
   color: #ffffff;
-
   background-color: #2c424a;
   background-image: url("../images/catalog/filter-bg.jpg");
   background-size: cover;
@@ -823,7 +821,6 @@ body {
 .inner-title {
   margin: 0;
   margin-bottom: 8px;
-
   font-size: 60px;
   line-height: 78px;
 }
@@ -831,51 +828,51 @@ body {
 .breadcrumbs {
   margin: 0;
   padding: 0;
-
   font-size: 0;
-
   list-style: none;
 }
 
 .breadcrumbs-item {
-  display: inline;
-
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
   word-break: break-all;
 }
 
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 28px;
+}
+
 .breadcrumbs-item:not(:last-child)::after {
-  display: inline-block;
-  vertical-align: middle;
-  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  left: auto;
+  margin: auto 0;
+  display: block;
+  height: 21px;
   width: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
-
   content: "";
-
   background-image: url("../images/catalog/breadcrumbs-vector.svg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 8px 20px;
 }
 
 .breadcrumbs-link {
-  vertical-align: middle;
-
-  font-size: 16px;
   text-decoration: none;
   color: #ffffff;
 }
 
 .breadcrumbs-link.home {
-  display: inline-block;
-  height: 15px;
+  display: block;
+  height: 21px;
   width: 13px;
-
-  background-image: url("../images/catalog/home-breadcrubs.svg");
+  background-image: url("../images/catalog/home-breadcrumbs.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 13px 15px;
+  background-position: center 3px;
 }
 
 /* filter */
