@@ -97,6 +97,7 @@ body {
   border-radius: 4px;
   background-color: #615048;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 /*  Проверяем поддержку :focus-visible, если НЕ поддерживаем, то проваливаемся внутрь директивы и прописываем :focus */
@@ -106,6 +107,7 @@ body {
     border-radius: 4px;
     background-color: #615048;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -132,6 +134,7 @@ body {
 .button-blue:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
   background-color: #68a2ca;
 }
 
@@ -139,6 +142,7 @@ body {
   .button-blue:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
     background-color: #68a2ca;
   }
 }
@@ -166,6 +170,7 @@ body {
 .button-green:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
   background-color: #6c9e42;
 }
 
@@ -173,6 +178,7 @@ body {
   .button-green:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
     background-color: #6c9e42;
   }
 }
@@ -201,12 +207,14 @@ body {
 .button-transparent:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
   .button-transparent:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -286,6 +294,7 @@ body {
 .navigation-link:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
@@ -293,6 +302,7 @@ body {
   .navigation-link:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -360,12 +370,14 @@ body {
 .user-menu-icon:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
   .user-menu-icon:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -423,7 +435,7 @@ body {
 }
 
 .subscribe.no-background {
-  background: none
+  background: none;
 }
 
 .subscribe.no-background .section-header-title {
@@ -540,6 +552,7 @@ body {
 .social-link:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
@@ -549,6 +562,7 @@ body {
   .social-link:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -574,6 +588,7 @@ body {
   color: #756157;
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
@@ -581,6 +596,7 @@ body {
     color: #756157;
     border-radius: 4px;
     outline: 3px solid #35aeff;
+    outline-offset: unset;
   }
 }
 
@@ -607,6 +623,7 @@ body {
 .developer:focus-visible {
   border-radius: 4px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
@@ -616,6 +633,7 @@ body {
   .developer:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -893,12 +911,14 @@ body {
 .breadcrumbs-link:focus-visible {
   border-radius: 2px;
   outline: 3px solid #35aeff;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
   .breadcrumbs-link:focus {
     border-radius: 4px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
@@ -1053,6 +1073,7 @@ body {
 .price:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -1140,17 +1161,20 @@ body {
 .range-button:focus-visible {
   border-radius: 5px;
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
 }
 
 @supports not selector(:focus-visible) {
   .range-button:focus {
     border-radius: 5px;
     outline: 3px solid #83b3d3;
+    outline-offset: unset;
   }
 }
 
 .range-button:active {
   outline: 3px solid #83b3d3;
+  outline-offset: unset;
   border-radius: 5px;
 }
 
@@ -1432,6 +1456,7 @@ body {
     [class$="divider"]
   ):focus-visible {
   outline: 1px solid #82b3d3;
+  outline-offset: unset;
   background-color: #68a2ca;
 }
 
@@ -1439,6 +1464,7 @@ body {
   .pagination-list-link:not([class$="current"], [class$="divider"]):focus {
     background-color: #68a2ca;
     outline: 1px solid #82b3d3;
+    outline-offset: unset;
   }
 }
 
