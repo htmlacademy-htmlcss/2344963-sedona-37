@@ -426,11 +426,11 @@ body {
   background: none
 }
 
-.subscribe .section-header-title {
+.subscribe.no-background .section-header-title {
   color: #000000;
 }
 
-.subscribe .section-header-text {
+.subscribe.no-background .section-header-text {
   color: #000000;
 }
 
