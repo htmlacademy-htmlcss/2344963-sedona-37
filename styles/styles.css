@@ -836,6 +836,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .modal {
@@ -1074,15 +1075,21 @@ body {
   padding-right: 36px;
 }
 
-.kids-label::after {
+.tooltip {
   position: absolute;
-  right: 0;
   top: 0;
   bottom: 0;
-  margin: auto 0;
+  right: 0;
+  margin: auto;
+  display: block;
   width: 26px;
   height: 26px;
-  content: "";
+}
+
+.tooltip-toggle {
+  width: 26px;
+  height: 26px;
+  border: none;
   background-color: #83b3d3;
   background-image: url("../images/index/tooltip.svg");
   background-repeat: no-repeat;
@@ -1090,12 +1097,14 @@ body {
   border-radius: 50%;
 }
 
-.tooltip {
+.tooltip-text {
   position: absolute;
-  top: 40px;
-  left: -56px;
+  z-index: 1;
+  top: 41px;
+  left: -115px;
+  display: block;
   width: 256px;
-  height: 143px;
+  min-height: 143px;
   padding: 20px 18px 18px 22px;
   color: #ffffff;
   font-size: 16px;
@@ -1108,10 +1117,10 @@ body {
   visibility: hidden;
 }
 
-.tooltip::before {
+.tooltip-text::before {
   position: absolute;
-  top: -18px;
-  left: 118px;
+  top: -17px;
+  left: 119px;
   width: 0;
   height: 0;
   content: "";
@@ -1119,7 +1128,7 @@ body {
   border-bottom: 10px solid #333333;
 }
 
-.kids-label:hover .tooltip {
+.tooltip-toggle:hover + .tooltip-text {
   visibility: visible;
 }
 
