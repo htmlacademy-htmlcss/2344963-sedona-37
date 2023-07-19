@@ -776,18 +776,15 @@ body {
 }
 
 .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   width: 400px;
   height: 100%;
-  padding: 83px;
+  padding: 112px 85px 112px 85px;
+}
+
+.flex-wrap.img {
+  width: 400px;
+  height: 100%;
+  padding: 102px 85px 102px 85px;
 }
 
 .advantages-title {
