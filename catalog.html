@@ -38,12 +38,12 @@
           </ul>
           <!-- Пользовтельское меню -->
           <ul class="user-menu">
-            <li class="user-menu-item">
+            <li class="user-menu-item user-button">
               <button class="user-menu-icon icon-search" type="button">
                 <span class="visually-hidden">Поиск.</span>
               </button>
             </li>
-            <li class="user-menu-item">
+            <li class="user-menu-item user-button">
               <button class="user-menu-icon icon-heart" type="button">
                 <span class="visually-hidden">Избранное.</span>
               </button>
@@ -168,6 +168,7 @@
                   value="0"
                   min="0"
                   max="9998"
+                  required
                >
                 <span class="price-text price-text-from">от</span>
                 <input
@@ -177,6 +178,7 @@
                   value="9000"
                   min="1"
                   max="9999"
+                  required
                >
                 <span class="price-text price-text-to">до</span>
               </div>
@@ -395,6 +397,7 @@
               name="email"
               type="email"
               placeholder="Ваш e-mail"
+              required
            >
             <button class="button subscribe-button button-blue" type="submit">
               Подписаться
