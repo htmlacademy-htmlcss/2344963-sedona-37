@@ -36,12 +36,12 @@
           </ul>
           <!-- Пользовтельское меню -->
           <ul class="user-menu">
-            <li class="user-menu-item">
+            <li class="user-menu-item user-button">
               <button class="user-menu-icon icon-search" type="button">
                 <span class="visually-hidden">Поиск.</span>
               </button>
             </li>
-            <li class="user-menu-item">
+            <li class="user-menu-item user-button">
               <button class="user-menu-icon icon-heart" type="button">
                 <span class="visually-hidden">Избранное.</span>
               </button>
@@ -216,6 +216,7 @@
               name="email"
               type="email"
               placeholder="Ваш e-mail"
+              required
            >
             <button class="button subscribe-button button-blue" type="submit">
               Подписаться
@@ -358,6 +359,7 @@
                 name="checkin-date"
                 placeholder="Укажите дату"
                 value="27 апреля 2020"
+                required
              >
               <span class="message message-error">
                 Мы не можем отправить вас в прошлое.
@@ -372,6 +374,7 @@
                 name="checkout-date"
                 placeholder="Укажите дату"
                 value="1 сентября 2023"
+                required
              >
               <span class="message message-info">
                 На эти даты есть свободные номера. Пока есть.
@@ -403,6 +406,7 @@
                     id="adults"
                     name="adults"
                     value="2"
+                    required
                  >
                   <button
                     class="btn-plus-minus"
@@ -426,14 +430,14 @@
               </div>
               <div class="field-group">
                 <span class="kids-label">
-                  <label for="kids">Дети: </label>
+                  <label for="kids">Дети:</label>
                   <span class="tooltip">
                     <button
                       class="tooltip-toggle"
                       type="button"
                       aria-labelledby="tooltip-label-info"
                     >
-                      <span class="visually-hidden"> Информация</span>
+                      <span class="visually-hidden">Информация</span>
                     </button>
                     <span
                       class="tooltip-text"
@@ -468,6 +472,7 @@
                     id="kids"
                     name="kids"
                     value="2"
+                    required
                  >
                   <button
                     class="btn-plus-minus"
