@@ -712,10 +712,11 @@ body {
 .hero {
   padding: 51px 0 82px;
   color: #ffffff;
-  background-color: #2c424a;
   background: url("../images/index/divider.svg") no-repeat center bottom,
     url("../images/index/hero-bg.jpg") no-repeat center;
   background-size: contain, cover;
+  background-color: #2c424a;
+
 }
 
 .hero-img {
@@ -784,7 +785,6 @@ body {
   flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   width: 400px;
   height: 100%;
   padding: 83px;
@@ -819,7 +819,7 @@ body {
 }
 
 .advantages-item img {
-  height: 100%;
+  min-height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1118,6 +1118,7 @@ body {
   padding: 0;
   border: none;
   margin: auto;
+  background: none;
 }
 
 .btn-plus-minus svg {
@@ -1827,6 +1828,8 @@ body {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  background-color: #2c424a;
+  color: #ffffff;
 }
 
 .hotel-card-caption {
